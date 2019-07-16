@@ -1,15 +1,33 @@
 USE burgershack2019;
 -- DROP TABLE sides;
-CREATE TABLE sides
-(
-  id INT AUTO_INCREMENT,
-  name VARCHAR(255) NOT NULL,
- PRIMARY KEY (id)  
-);
-CREATE TABLE drinks
-(
-  id INT AUTO_INCREMENT,
-  name VARCHAR(255) NOT NULL,
-  sugarFree TINYINT DEFAULT 0,
- PRIMARY KEY (id)  
-);
+-- CREATE TABLE sides
+-- (
+--   id INT AUTO_INCREMENT,
+--   name VARCHAR(255) NOT NULL,
+--  PRIMARY KEY (id)  
+-- );
+-- CREATE TABLE drinks
+-- (
+--   id INT AUTO_INCREMENT,
+--   name VARCHAR(255) NOT NULL,
+--   sugarFree TINYINT DEFAULT 0,
+--  PRIMARY KEY (id)  
+-- );
+
+-- INSERT INTO sides (name)
+--               VALUES ("Onion Rings"),
+--                ("Tots");
+-- SELECT * FROM sides; GET ALL
+-- SELECT * FROM sides WHERE id = 2; GET BY ID
+-- SELECT * FROM sides WHERE name = 'Fries'; GET FILTER
+-- DELETE FROM sides WHERE id = 1;
+-- SELECT * FROM sides; GET ALL
+
+ -- PUT REQUEST
+-- UPDATE sides
+-- SET name = 'Cheese Sticks'
+-- WHERE id = 3;
+-- SELECT * FROM sides; GET ALL
+-- DELETES EVERYTHING
+-- DELETE FROM sides;
+-- SELECT * FROM  sides;

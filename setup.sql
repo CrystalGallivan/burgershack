@@ -1,0 +1,15 @@
+USE burgershack2019;
+-- DROP TABLE sides;
+CREATE TABLE sides
+(
+  id INT AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+ PRIMARY KEY (id)  
+);
+CREATE TABLE drinks
+(
+  id INT AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  sugarFree TINYINT DEFAULT 0,
+ PRIMARY KEY (id)  
+);

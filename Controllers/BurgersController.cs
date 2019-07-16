@@ -27,11 +27,13 @@ namespace burgershack.Controllers
 
     // GET api/Burgers/5
     [HttpGet("{id}")]
-    public ActionResult<string> Get(int id)
+    public ActionResult<string> Get(string id)
     {
       try
       {
-        return Ok(Burgers[id]);
+        Burger found = Burgers.Find(B => B.Id == id);
+        if (found == null) return BadRequest("No Burger with that Id");
+        return Ok(found);
       }
       catch (Exception e)
       {
